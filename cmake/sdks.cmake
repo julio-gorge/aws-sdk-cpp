@@ -18,6 +18,7 @@ endif()
 
 
 if(BUILD_ONLY)
+    set(BUILD_ONLY ${BUILD_ONLY})
     set(SDK_BUILD_LIST ${BUILD_ONLY})
     foreach(TARGET IN LISTS BUILD_ONLY)
         message(STATUS "Considering ${TARGET}")
